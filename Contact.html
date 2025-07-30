@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Simple Rishta</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('redbg.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Cover the entire background */
+            color: #000;
+        }
+
+        header {
+            background-color: #ffcccb; /* Light pink background color */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: flex-end;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff7f7f; /* Light red text color */
+            font-weight: 900;
+            font-size: 1em; /* Slightly smaller size */
+        }
+
+        .nav-links a:hover {
+            color: #ff4e50;
+        }
+
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-icons i {
+            margin: 0 10px;
+            color: #000; /* Black icon color */
+        }
+
+        footer {
+            background-color: #ffe4e1;
+            padding: 40px 20px;
+            color: #000;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .quick-links, .subscribe, .keep-in-touch {
+            flex: 1;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .quick-links h3, .subscribe h3, .keep-in-touch h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ff69b4;
+        }
+
+        .quick-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .quick-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .quick-links ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .quick-links ul li a:hover {
+            color: #ff69b4;
+        }
+
+        .subscribe {
+            text-align: center;
+        }
+
+        .subscribe-logo {
+            width: 200px;
+            height: auto;
+            margin: 10px auto;
+        }
+
+        .keep-in-touch p {
+            margin: 0 0 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #ff69b4;
+            font-size: 1.5em;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff1493;
+        }
+
+        .social-icons a .fa-facebook-f { content: url('https://path-to-your/facebook-icon.png'); }
+        .social-icons a .fa-twitter { content: url('https://path-to-your/twitter-icon.png'); }
+        .social-icons a .fa-instagram { content: url('https://path-to-your/instagram-icon.png'); }
+        .social-icons a .fa-youtube { content: url('https://path-to-your/youtube-icon.png'); }
+        .social-icons a .fa-linkedin { content: url('https://path-to-your/linkedin-icon.png'); }
+        .social-icons a .fa-pinterest { content: url('https://path-to-your/pinterest-icon.png'); }
+
+        .copyright {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffc0cb;
+            margin-top: 20px;
+        }
+
+        .copyright p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        .copyright a {
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s ease;
+        }
+
+        .copyright a:hover {
+            color: #ff69b4;
+        }
+
+        .contact-section {
+            padding: 50px 20px;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+        }
+
+        .contact-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff4e50;
+        }
+
+        .contact-section .contact-info {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-section .contact-info i {
+            margin-right: 10px;
+            color: #ff4e50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="home.php">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-envelope"></i>
+            <!-- Removed profile picture -->
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +123-456-7890</p>
+            <p><i class="fas fa-phone"></i> +098-765-4321</p>
+            <p><i class="fas fa-envelope"></i> usman786@gmail.com</p>
+            <p><i class="fas fa-envelope"></i> mughal@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <img src="logo.png" alt="Logo" class="subscribe-logo">
+            </div>
+            <div class="keep-in-touch">
+                <h3>Keep in Touch</h3>
+                <p>cheema8044@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Matchmaking. All Rights Reserved | Developed by <a href="#">Maida Butt</a>, <a href="#">Noman Cheema</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('redbg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header {
+    background-image: url('redbg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Increase header logo size */
+header .logo img {
+    max-width: 200px; /* Increased size */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center logo */
+}
+
+/* Navigation links styling */
+header .nav-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+header .nav-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main container styling */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile header styling */
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img#profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+.profile-header h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* User info table styling */
+.user-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-info th, .user-info td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.user-info th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.user-info tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-info td {
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    background-color: #ffe4e1;
+    padding: 40px 20px;
+    color: #000;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.quick-links, .subscribe, .keep-in-touch {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+}
+
+.quick-links h3, .subscribe h3, .keep-in-touch h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff69b4;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+    color: #ff69b4;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.subscribe-logo {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.keep-in-touch p {
+    margin: 0 0 10px;
+}
+
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffc0cb;
+    margin-top: 20px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #ff69b4;
+}

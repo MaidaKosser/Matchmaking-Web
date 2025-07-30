@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('redbg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: flex-end;
+        }
+        .nav-links a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #ff4e50;
+            font-weight: 900;
+            font-size: 1.2em;
+        }
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-icons i {
+            margin: 0 10px;
+            color: #ff4e50;
+        }
+        .nav-icons .profile-pic {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ff4e50;
+        }
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff4e50; 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img.profile-image {
+            width: 140px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        footer {
+    background-color: #ffe4e1;
+    padding: 40px 20px;
+    color: #000;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.quick-links, .subscribe, .keep-in-touch {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+}
+
+.quick-links h3, .subscribe h3, .keep-in-touch h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff69b4;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+    color: #ff69b4;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.subscribe-logo {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.keep-in-touch p {
+    margin: 0 0 10px;
+}
+
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffc0cb;
+    margin-top: 20px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #ff69b4;
+}
+    </style>
+</head>
+<body>
+    <header style="background-image: url('redbg.jpg');">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="firstpage.html">Home</a>
+            <a href="profile.html">Dashboard</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-envelope"></i>
+            <img src="boy.webp" alt="Profile Picture" class="profile-pic">
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Personal Information</h1>
+        <table>
+            <tr>
+                <th>Profile Image</th>
+                <td><img src="boy.webp" alt="Profile Image" class="profile-image"></td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>Muhammad Usman</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td>6 feet</td>
+            </tr>
+            <tr>
+                <th>Caste</th>
+                <td>Mughal</td>
+            </tr>
+            <tr>
+                <th>Religion</th>
+                <td>Muslim</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>mm/dd/yyyy</td>
+            </tr>
+            <tr>
+                <th>Contact Number</th>
+                <td>03207658765</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Gujranwala</td>
+            </tr>
+            <tr>
+                <th>Email ID</th>
+                <td>usman@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Job Details</th>
+                <td>
+                    <ul>
+                        <li>Designation: Software Engineer</li>
+                        <li>Earning: 100000 per month</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Property Details</th>
+                <td>
+                    <ul>
+                        <li>Owns a house in Gujranwala</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Educational Details</th>
+                <td>
+                    <ul>
+                        <li>BS-Software Engineering from GIFT University</li>
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Number of Siblings</th>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Married Persons in House</th>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>Father's Occupation</th>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <th>Mother's Occupation</th>
+                <td>House Wife</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+    <div class="footer-content">
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="firstpage.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                
+            </ul>
+        </div>
+        <div class="subscribe">
+            <img src="logo.png" alt="Logo" class="subscribe-logo">
+        </div>
+        <div class="keep-in-touch">
+            <h3>Keep in Touch</h3>
+            <p>cheema8044@gmail.com</p>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrighted & Designed by Khired Networks | <a href="#">Privacy Policy</a> | <a href="#">Refund Policy</a> | <a href="#">Disclaimer</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

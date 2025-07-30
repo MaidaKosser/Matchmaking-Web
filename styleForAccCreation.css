@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(redbg.jpg);
+}
+
+/* Form Container */
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Step Container */
+.step {
+    display: none;
+}
+
+/* Header Styling */
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Input and Select Styling */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+/* Buttons Styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Previous and Next Button Styling */
+button[type="button"] {
+    background-color: #28a745;
+    margin-right: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #218838;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Error and Success Messages */
+.error {
+    color: red;
+    margin: 10px 0;
+}
+
+.success {
+    color: green;
+    margin: 10px 0;
+}
