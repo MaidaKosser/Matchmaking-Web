@@ -54,18 +54,7 @@ Open phpMyAdmin
 Create a new database (e.g., matchmaking_db)
 
 Import the provided SQL file:
-
-pgsql
-Copy
-Edit
-/database/matchmaking_db.sql
-Update Database Connection
-Open the file db.php (or your database config file) and update with your local credentials:
-
-php
-Copy
-Edit
-$host = 'localhost';
+$host = 'localhos:...t';
 $user = 'root';
 $password = '';
 $database = 'matchmaking_db';
@@ -77,48 +66,3 @@ Start Apache and MySQL
 
 Run the Project
 
-Open your browser
-
-Navigate to:
-http://localhost/Matchmaking/index.php
-##📁 Folder Structure
-Matchmaking-Web/
-├── assets/
-├── css/
-├── js/
-├── php/
-│   ├── login.php
-│   ├── signup.php
-│   ├── upgradePlan.php
-│   └── profile.php
-├── accountCreationInfo/
-├── dashboard/
-├── profileofcandidate.html
-├── database/
-│   └── matchmaking_db.sql
-└── README.md
-📌 Notes
-Free users can only see limited profile details. A popup is triggered for full access.
-
-Premium users can view full profiles and status.
-
-Profile borders are color-coded to indicate active users.
-
-##👑 Admin Access
-A basic admin panel is included to manage:
-
-User plan upgrades
-
-Profile approval/status
-
-General backend user data
-
-##🔐 Security
-Passwords are hashed before storing.
-
-Sessions are used for login security.
-
-Profile access is controlled based on subscription level.
-
-##💬 Support
-For issues or customization requests, feel free to open an issue in the repo or drop a message.
