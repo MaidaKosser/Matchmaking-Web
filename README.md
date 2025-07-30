@@ -80,15 +80,8 @@ Run the Project
 Open your browser
 
 Navigate to:
-
-bash
-Copy
-Edit
-http://localhost/Matchmaking-Web/index.php
-📁 Folder Structure
-pgsql
-Copy
-Edit
+http://localhost/Matchmaking/index.php
+##📁 Folder Structure
 Matchmaking-Web/
 ├── assets/
 ├── css/
@@ -111,7 +104,7 @@ Premium users can view full profiles and status.
 
 Profile borders are color-coded to indicate active users.
 
-👑 Admin Access
+#👑 Admin Access
 A basic admin panel is included to manage:
 
 User plan upgrades
@@ -120,12 +113,12 @@ Profile approval/status
 
 General backend user data
 
-🔐 Security
+#🔐 Security
 Passwords are hashed before storing.
 
 Sessions are used for login security.
 
 Profile access is controlled based on subscription level.
 
-💬 Support
+#💬 Support
 For issues or customization requests, feel free to open an issue in the repo or drop a message.
